@@ -44,9 +44,11 @@ function handleSearchBoxInput() {
         );
       }
     })
-    .catch(() =>
-      Notify.failure('Oops, there is no country with that name', notifyOptions)
-    );
+    .catch(() => {
+      countryInfoEl.innerHTML = '';
+      countryListEl.innerHTML = '';
+      Notify.failure('Oops, there is no country with that name', notifyOptions);
+    });
 }
 
 function makeCountryMarkup(data) {
