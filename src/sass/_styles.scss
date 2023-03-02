@@ -1,0 +1,22 @@
+.country-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 30px;
+}
+
+.inner-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.title {
+  margin: 0;
+}
+.sub-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.text {
+  font-weight: 400;
+}
