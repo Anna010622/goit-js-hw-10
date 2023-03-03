@@ -38,6 +38,8 @@ function handleSearchBoxInput() {
         countryInfoEl.innerHTML = '';
         makeCountriesMarkup(data);
       } else if (data.length > 10) {
+        countryInfoEl.innerHTML = '';
+        countryListEl.innerHTML = '';
         Notify.info(
           'Too many matches found. Please enter a more specific name.',
           notifyOptions
